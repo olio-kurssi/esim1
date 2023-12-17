@@ -7,13 +7,13 @@ class Person{
         int age;
         string name;
     public:
-        int getAge(){
+        int getAge() const {
             return age;
         }
         void setAge(int value){
             age=value;
         }
-        string getName(){
+        string getName() const {
             return name;
         }
         void setName(string value){
