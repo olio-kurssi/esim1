@@ -8,6 +8,7 @@ Esimerkissä olen luonut Person-luokan main.cpp tiedostossa. Yleensä jokaiselle
 
 Esimerkissä on luotu Person luokasta kaksi oliota eri tavalla. 
 
-objectPerson1 on luotu dynaamiseen muistiin eli kekomuistiin. Sen tuhoamisesta ja muistivarauksesta on huolehdittava.
+objectPerson1 on luotu pinomuistiin ja se on siis ns. automaattinen olio.
 
-objectPerson2 on luotu pinomuistiin ja se on siis ns. automaattinen olio.
+objectPerson2 on luotu dynaamiseen muistiin eli kekomuistiin. Sen tuhoamisesta ja muistivarauksesta on huolehdittava.
+
