@@ -22,25 +22,19 @@ class Person{
 };
 int main()
 {
-    //tietueen luominen
-    typedef struct Person_struct{
-        int age;
-        string name;
-    }
-    person;
-
-    //tietuemuuttujan luominen ja sen käyttö
-    person pe;
-    pe.age=23;
-    pe.name="Teppo Testi";
-    cout<<"Terve "<<pe.name<<" olet siis "<<pe.age<<" vuotias"<<endl;
 
     //Person olion luonti dynaamiseen muistiin ja olion käyttö
-    Person *objectPerson = new Person;
-    objectPerson->setAge(25);
-    objectPerson->setName("Liisa Joki");
-    cout<<"Terve "<<objectPerson->getName()<<" olet siis "<<objectPerson->getAge()<<" vuotias"<<endl;
-    delete objectPerson;
+    Person *objectPerson1 = new Person;
+    objectPerson1->setAge(25);
+    objectPerson1->setName("Liisa Joki");
+    cout<<"Terve "<<objectPerson1->getName()<<" olet siis "<<objectPerson1->getAge()<<" vuotias"<<endl;
+    delete objectPerson1;
+    objectPerson1=nullptr;
 
+    //Person olion luonti pinomuistiin ja olion käyttö
+    Person objectPerson2;
+    objectPerson2.setAge(25);
+    objectPerson2.setName("Teppo Testi");
+    cout<<"Terve "<<objectPerson2.getName()<<" olet siis "<<objectPerson2.getAge()<<" vuotias"<<endl;
     return 0;
 }
