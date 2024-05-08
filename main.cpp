@@ -34,13 +34,15 @@ int main()
     objectPerson2->setAge(25);
     objectPerson2->setName("Liisa Joki");
     cout<<"Terve "<<objectPerson2->getName()<<" olet siis "<<objectPerson2->getAge()<<" vuotias"<<endl;
-    delete objectPerson2;
-    objectPerson2=nullptr;
+    //tärkeät toimet!
+    delete objectPerson2; //tuhotaan olio
+    objectPerson2=nullptr; //asetetaan osoitin tyhjäksi
 
     //Person olion luonti dynaamiseen muistiin smart_pointerilla ja olion käyttö
     unique_ptr<Person> objectPerson3 = make_unique<Person>();
     objectPerson3->setAge(25);
     objectPerson3->setName("Aino Virta");
     cout<<"Terve "<<objectPerson3->getName()<<" olet siis "<<objectPerson3->getAge()<<" vuotias"<<endl;
+
     return 0;
 }
