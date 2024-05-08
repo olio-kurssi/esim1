@@ -6,9 +6,12 @@ Yleensä C++ koodia ei kirjoiteta tällä tavalla yhteen tiedostoon kuin tässä
 
 Esimerkissä olen luonut Person-luokan main.cpp tiedostossa. Yleensä jokaiselle luokalle luodaan kaksi omaa tiedostoa. Person-luokalle luotaisiin tiedostot **person.h** ja **person.cpp**
 
-Esimerkissä on luotu Person luokasta kaksi oliota eri tavalla. 
+Esimerkissä on luotu Person luokasta kolme oliota eri tavalla. 
 
 objectPerson1 on luotu pinomuistiin ja se on siis ns. automaattinen olio.
 
 objectPerson2 on luotu dynaamiseen muistiin eli kekomuistiin. Sen tuhoamisesta ja muistivarauksesta on huolehdittava.
+
+objectPerson3 on luotu dynaamiseen muistiin eli kekomuistiin. Tässä käytetään smart-pointteria, joten olion tuhoamisesta ei tarvitse huolehtia itse.
+
 

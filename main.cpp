@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory> //tarvitaan kun käytetään smart pointtereita
 
 using namespace std;
 
@@ -36,6 +37,10 @@ int main()
     delete objectPerson2;
     objectPerson2=nullptr;
 
-
+    //Person olion luonti dynaamiseen muistiin smart_pointerilla ja olion käyttö
+    unique_ptr<Person> objectPerson3 = make_unique<Person>();
+    objectPerson3->setAge(25);
+    objectPerson3->setName("Aino Virta");
+    cout<<"Terve "<<objectPerson3->getName()<<" olet siis "<<objectPerson3->getAge()<<" vuotias"<<endl;
     return 0;
 }
